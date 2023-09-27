@@ -39,8 +39,8 @@ return (
             <IconoTwo name='layers' style={styles.tabText} />
             </TouchableOpacity>
             <TouchableOpacity
-            style={[styles.tab, activeTab === 'zona5' && styles.activeTab]}
-            onPress={() => handleTabPress('zona5')}
+            style={[styles.tab, activeTab === 'noticias' && styles.activeTab]}
+            onPress={() => handleTabPress('noticias')}
             >
             <IconoThree name='globe' style={styles.tabText} />
             </TouchableOpacity>
