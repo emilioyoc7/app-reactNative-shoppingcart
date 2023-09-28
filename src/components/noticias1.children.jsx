@@ -40,10 +40,10 @@ const BoxNoticias1 = () => {
                         />
                     </View>
                     <Text>
-                        Playera
+                        entrevista a cientifico
                     </Text>
                     <Text style={styles.gris}>
-                        $199
+                        4,4 mil views
                     </Text>
                 </View>
                 <View style={styles.box1group}>
@@ -54,10 +54,10 @@ const BoxNoticias1 = () => {
                         />
                     </View>
                     <Text style={styles.textBotton}>
-                        Spikes
+                        virus mundial
                     </Text>
-                    <Text style={styles.textBottonPrice}>
-                        $2500
+                    <Text style={styles.gris}>
+                        1,1 mill views
                     </Text>
                 </View>
                 <View style={styles.box1group}>
@@ -68,10 +68,10 @@ const BoxNoticias1 = () => {
                         />
                     </View>
                     <Text style={styles.textBotton}>
-                        Sudadera
+                        new books
                     </Text>
-                    <Text style={styles.textBottonPrice}>
-                        $799
+                    <Text style={styles.gris}>
+                        100 mill views
                     </Text>
                 </View>
                 <View style={styles.box1group}>
@@ -82,10 +82,76 @@ const BoxNoticias1 = () => {
                         />
                     </View>
                     <Text style={styles.textBotton}>
-                        Balon
+                        corredora
+                    </Text>
+                    <Text style={styles.gris}>
+                        10 mill views
+                    </Text>
+                </View>
+                </ScrollView>
+            </View>
+            <Text style={styles.textTitle3}>
+                Collage News
+            </Text>
+            <Text style={styles.subTitle}>
+                Boston
+            </Text>
+            <View style={styles.row}>
+                <ScrollView horizontal>
+                <View style={styles.box1group}>
+                    <View style={styles.box1collage}>
+                        <Image
+                        source={require('../../fotos/collage1.jpeg')}
+                        style={styles.imagen}
+                        />
+                    </View>
+                    <Text style={styles.textBotton}>
+                        Graficas
                     </Text>
                     <Text style={styles.textBottonPrice}>
-                        $1200
+                        Dolar
+                    </Text>
+                </View>
+                <View style={styles.box1group}>
+                    <View style={styles.box2collage}> 
+                    <Image
+                        source={require('../../fotos/collage2.jpeg')}
+                        style={styles.imagen}
+                        />
+                    </View>
+                    <Text style={styles.textBotton}>
+                        Oficina
+                    </Text>
+                    <Text style={styles.textBottonPrice}>
+                        Preguntar
+                    </Text>
+                </View>
+                <View style={styles.box1group}>
+                    <View style={styles.box3collage}>
+                        <Image
+                        source={require('../../fotos/collage3.jpeg')}
+                        style={styles.imagen}
+                        />
+                    </View>
+                    <Text style={styles.textBotton}>
+                        Reporte
+                    </Text>
+                    <Text style={styles.textBottonPrice}>
+                        Mas informacion
+                    </Text>
+                </View>
+                <View style={styles.box1group}>
+                    <View style={styles.box4collage}>
+                        <Image
+                        source={require('../../fotos/collage4.jpeg')}
+                        style={styles.imagen}
+                        />
+                    </View>
+                    <Text style={styles.textBotton}>
+                        Curso
+                    </Text>
+                    <Text style={styles.textBottonPrice}>
+                        Registrarse
                     </Text>
                 </View>
                 </ScrollView>
@@ -112,6 +178,10 @@ const styles = StyleSheet.create({
         fontSize:20,
         color: '#2980E3'
     },
+    textTitle3:{
+        fontSize:20,
+        color: '#8E29E3'
+    },
     subTitle:{
         marginTop:10,
         marginBottom:10,
@@ -133,7 +203,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderRadius:15,
         marginTop:10,
-        marginLeft:20,
     },
     box3:{
         width:90,
@@ -159,7 +228,42 @@ const styles = StyleSheet.create({
     gris:{
         fontSize:14,
         color:'#6E6E6E'
-    }
+    },
+    textBottonPrice:{
+        fontSize:12,
+        color:'#389F1A'
+    },
+    textBotton:{
+        fontSize:11,
+    },
+    box1collage:{
+        width:90,
+        alignItems: 'center',
+        borderRadius:15,
+        marginTop:10,
+        marginLeft:26,
+    },
+    box2collage:{
+        width:90,
+        alignItems: 'center',
+        borderRadius:15,
+        marginTop:10,
+        marginLeft:20,
+    },
+    box3collage:{
+        width:90,
+        alignItems: 'center',
+        borderRadius:15,
+        marginTop:10,
+        marginLeft:20,
+    },
+    box4collage:{
+        width:90,
+        alignItems: 'center',
+        borderRadius:15,
+        marginTop:10,
+        marginLeft:20,
+    },
 })
 
 export default BoxNoticias1
