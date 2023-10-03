@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, SafeAreaView, Text} from 'react-native';
 import LogicAppBar from './Appbar.logic';
 import Shoppingcart from './Shoppingcart.component';
+import Noticias from './noticias.component';
 
 const AppBar = () => {
     const [activeTab, setActiveTab] = useState('Home'); 
@@ -34,11 +35,9 @@ const renderContent = () => {
                 <Text>zona3</Text>
             </View>
     );
-    }else if (activeTab === 'zona5') {
+    }else if (activeTab === 'noticias') {
         return (
-            <View>
-                <Text>zona3</Text>
-            </View>
+            <Noticias />
     );
     }else if (activeTab === 'zona6') {
         return (
