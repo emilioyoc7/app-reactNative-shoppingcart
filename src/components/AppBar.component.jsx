@@ -15,7 +15,7 @@ const renderContent = () => {
     if (activeTab === 'Home') {
         return (
             <View>
-                <Text>zona1</Text>
+                <Text>Holaaa</Text>
             </View>
     );
     }else if (activeTab === 'About') {
