@@ -27,8 +27,8 @@ return (
             <Icono name='shoppingcart' style={styles.tabText} />
             </TouchableOpacity>
             <TouchableOpacity
-            style={[styles.tab, activeTab === 'info' && styles.activeTab]}
-            onPress={() => handleTabPress('info')}
+            style={[styles.tab, activeTab === 'book' && styles.activeTab]}
+            onPress={() => handleTabPress('book')}
             >
             <IconoTwo name='book' style={styles.tabText} />
             </TouchableOpacity>
