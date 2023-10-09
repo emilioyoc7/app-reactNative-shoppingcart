@@ -3,6 +3,7 @@ import { View, SafeAreaView, Text} from 'react-native';
 import LogicAppBar from './Appbar.logic';
 import Shoppingcart from './Shoppingcart.component';
 import Noticias from './noticias.component';
+import Book from './book.component';
 
 const AppBar = () => {
     const [activeTab, setActiveTab] = useState('Home'); 
@@ -15,7 +16,7 @@ const renderContent = () => {
     if (activeTab === 'Home') {
         return (
             <View>
-                <Text>zona1</Text>
+                <Text>Holaaa</Text>
             </View>
     );
     }else if (activeTab === 'About') {
@@ -23,11 +24,9 @@ const renderContent = () => {
             <Shoppingcart />
     );
     }
-    else if (activeTab === 'info') {
+    else if (activeTab === 'book') {
         return (
-            <View>
-                <Text>zona3</Text>
-            </View>
+            <Book />
     );
     }else if (activeTab === 'zona4') {
         return (
